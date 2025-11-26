@@ -12,7 +12,7 @@
     <h2>Personal Details</h2>
     <form action="">
       <label for="fname">First Name:</label>
-      <input type="text" placeholder="e.g., Arjun" id="fname" name="fname" />
+      <input type="text" placeholder="e.g., Arjun" id="fname" name="fname" required/>
       <br /><br />
       <label for="lname">Last Name:</label>
       <input type="text" placeholder="e.g., Kumar" name="lname" id="lname" />
@@ -65,9 +65,38 @@
         <option value="ECE">ECE</option>
       </select>
       <h3>Extracurricular Activities:</h3>
-      <label for=""></label>
-      <input type="checkbox">
+      <br>
+      <input type="checkbox" name="sports" id="sports">
+      <label for="sports">Sports</label>
+      <br>
+      <input type="checkbox" name="music & arts" id="m&a">
+      <label for="m&a">Music & Arts</label>
+      <br>
+      <input type="checkbox" name="tc" id="tc">
+      <label for="tc">Technology Clubs</label>
+      <br>
+      <input type="checkbox" name="volunteer" id="volunteer">
+      <label for="volunteer">Volunteering</label>
       <br><br>
+      <hr>
+      <h2>Create Your Account</h2>
+      <label for="pass">Create a Password:</label>
+      <input type="text" name="password" id="pass">
+      <br><br>
+      <label for="ques">Security  Question: </label>
+      <select name="sqna" id="sqna">
+        <option value="petname">What is your pet name?</option>
+      </select>
+      <br><br>
+      <label for="sa">Security Answer:</label>
+      <input type="text">
+      <br><br>
+      <input type="checkbox">
+      <label for="t&c">I agree to the Terms and Conditions.</label>
+      <br><br>
+      <hr>
+      <button type="submit">Register</button>
+      <button type="reset">Clear Form</button>
     </form>
   </body>
 </html>
