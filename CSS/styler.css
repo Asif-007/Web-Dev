@@ -1,0 +1,30 @@
+/* #first{
+    background-color: blue;
+}
+
+#second{
+    background-color: grey;
+}
+
+
+
+.third
+{
+    background-color: green;
+}
+
+
+#first, .third{
+    font-style: italic;
+} */
+
+
+h1
+{
+    background-color: rgba(19, 118, 161, 0.5);
+}
+
+h2{
+    background-color: 
+    hsl(150, 50%, 50%);
+}
