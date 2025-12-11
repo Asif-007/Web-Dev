@@ -1,0 +1,14 @@
+h1{
+    background-color: orange;
+}
+
+
+.classA{
+    background-color: green;
+}
+h2{
+    background-color: aquamarine !important;
+}
+#firstId{
+    background-color: purple;
+}
