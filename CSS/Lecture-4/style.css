@@ -1,0 +1,46 @@
+.box {
+  height: 100px;
+  width: 100px;
+  /* margin: 5px; */
+}
+
+.container {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 5px;
+}
+
+/* justify content: workds around main axis 
+main axis decided by   flex direction */
+
+/* align items: works around cross axis
+ */
+
+.first {
+  background-color: orange;
+  order: ;
+  /* flex-grow: 1; */
+  /* flex-shrink: 4; */
+  /* flex-basis: 200px; -> main axis ke around size increase */
+  /* align-self: flex-start; */
+}
+
+.second {
+  background-color: green;
+  /* flex-grow: 2; */
+}
+
+.third {
+  background-color: red;
+  /* flex-grow: 3; */
+}
+
+.fourth {
+  background-color: chartreuse;
+  /* flex-grow: 4; */
+}
