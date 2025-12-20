@@ -1,0 +1,36 @@
+.container {
+  height: 400px;
+  width: 400px;
+  font-size: 50px;
+  background-color: aqua;
+}
+
+/* @media screen and (max-width: 600px) {
+  .container {
+    height: 300px;
+    width: 300px;
+    font-size: 30px;
+    background-color: wheat;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    font-size: 70px;
+    background-color: orange;
+  }
+} */
+
+@media screen and (min-width: 600px) {
+  .container {
+    background-color: pink;
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    background-color: red;
+    font-size: 80px;
+  }
+}
