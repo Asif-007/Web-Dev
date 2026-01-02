@@ -50,17 +50,39 @@
 // console.log(count);
 // console.log(counter());
 
-let user = {
-  balance: 500,
-  deposit: function (amount) {
-    if (typeof amount == "number" && amount > 0) {
-      this.balance += amount;
-      return this.balance;
-    }
-  },
-};
+function createBankAccount(initialBalance) {
+  let balance = initialBalance; // PRIVATE - can't be accessed directly
 
-user.deposit(200);
+  return {
+    deposit: function (amount) {
+      balance += amount;
+      return balance;
+    },
+
+    withdraw: function (amount) {
+      if (amount > balance) {
+        return "Insufficient funds";
+      }
+      balance -= amount;
+      return balance;
+    },
+
+    getBalance: function () {
+      return balance;
+    },
+  };
+}
+
+const myAccount = createBankAccount(100);
+
+console.log(myAccount.getBalance()); // 100
+myAccount.deposit(50); // 150
+myAccount.withdraw(30); // 120
+
+// Can't directly access or modify balance!
+console.log(myAccount.balance); // undefined
+myAccount.balance = 9999999; // Doesn't work!
+console.log(myAccount.getBalance()); // 120 - still protected
 
 // higher order functions
 function double(value) {
