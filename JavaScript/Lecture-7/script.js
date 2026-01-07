@@ -72,7 +72,8 @@
 // // a.reverse();
 // console.log(a);
 
-const arr = [10, 40, 50, [40, 90, 11], 80];
+// const arr = [10, 40, 50, [40, 90, 11], 80];
 
-const a = arr.flat(Infinity);
-console.log(a);
+// const a = arr.flat(Infinity);
+// console.log(a);
+
