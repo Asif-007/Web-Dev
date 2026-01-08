@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(4, 4, 78, 0.663);
+  height: 650px;
+  width: 400px;
+  margin-top: 200px;
+  margin: auto;
+  border-radius: 10px;
+}
+.container h1{
+    text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+
+input{
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+}
+
+#result{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(4, 4, 78, 0.508);
+    padding: 10px;
+}

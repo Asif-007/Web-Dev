@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body
+    style="
+      background-color: rgb(122, 200, 226);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    "
+  >
+    <div class="container">
+      <h1>Astrology Insights</h1>
+      <form action="" id="astroform">
+        <label for="fname">First Name: </label>
+        <input type="text" name="fname" id="fname" />
+        <label for="surname">Surname: </label>
+        <input type="text" name="surname" id="surname" />
+        <label for="dob">Date of Birth: (Day)</label>
+        <input type="number" name="dob" id="dob" min="1" max="31" />
+        <label for="month">Month:</label>
+        <input type="number" name="month" id="month" min="1" max="12" />
+        <label for="yr">Year:</label>
+        <input type="number" name="yr" id="yr" min="1900" max="2026"/>
+        <button  id="a2" type="submit" style="background-color: rgb(122, 200, 226)">
+          Get Insights
+        </button>
+        <div id="result"></div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
