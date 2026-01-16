@@ -2,56 +2,56 @@
 
 // const { createElement } = require("react");
 
-const React = {
-  createElement: function (tag, styles, children) {
-    const element = document.createElement(tag);
+// const React = {
+//   createElement: function (tag, styles, children) {
+//     const element = document.createElement(tag);
 
-    if (typeof children === "string") element.innerText = children;
-    else {
-        for (let li of children) {
-            element.append(li)
-        }
-    }
+//     if (typeof children === "string") element.innerText = children;
+//     else {
+//         for (let li of children) {
+//             element.append(li)
+//         }
+//     }
     // for (let key in styles) {
     //   element.styles[key] = styles[key];
     // }
 
-    for (let [key, values] of Object.entries(styles)) {
-      element.style[key] = values;
-    }
-    return element;
-  },
-};
+//     for (let [key, values] of Object.entries(styles)) {
+//       element.style[key] = values;
+//     }
+//     return element;
+//   },
+// };
 
-const ReactDOM = {
-  render: function (element, root) {
-    root.append(element);
-  },
-};
-const header1 = React.createElement(
-  "h1",
-  { fontSize: "30px", backgroundColor: "blue", color: "white" },
-  "Hello Coder Army"
-);
-const header2 = React.createElement(
-  "h2",
-  { fontSize: "30px", backgroundColor: "black", color: "white" },
-  "Pokemon"
-);
+// const ReactDOM = {
+//   render: function (element, root) {
+//     root.append(element);
+//   },
+// };
+// const header1 = React.createElement(
+//   "h1",
+//   { fontSize: "30px", backgroundColor: "blue", color: "white" },
+//   "Hello Coder Army"
+// );
+// const header2 = React.createElement(
+//   "h2",
+//   { fontSize: "30px", backgroundColor: "black", color: "white" },
+//   "Pokemon"
+// );
 
-const li1 = React.createElement("li", {}, "HTML");
-const li2 = React.createElement("li", {}, "CSS");
-const li3 = React.createElement("li", {}, "JS");
+// const li1 = React.createElement("li", {}, "HTML");
+// const li2 = React.createElement("li", {}, "CSS");
+// const li3 = React.createElement("li", {}, "JS");
 
-const ul = React.createElement(
-  "ul",
-  {
-    fontSize: "30px",
-    backgroundColor: "blue",
-    color: "white",
-  },
-  [li1, li2, li3]
-);
+// const ul = React.createElement(
+//   "ul",
+//   {
+//     fontSize: "30px",
+//     backgroundColor: "blue",
+//     color: "white",
+//   },
+//   [li1, li2, li3]
+// );
 
 // const header1 = document.createElement("h1");
 // header1.textContent = "Hello Coder Army";
@@ -71,6 +71,6 @@ const ul = React.createElement(
 // root.append(header1);
 // root.append(header2);
 
-ReactDOM.render(header1, document.getElementById("root"));
-ReactDOM.render(header2, document.getElementById("root"));
-ReactDOM.render(ul,document.getElementById('root'))
+// ReactDOM.render(header1, document.getElementById("root"));
+// ReactDOM.render(header2, document.getElementById("root"));
+// ReactDOM.render(ul,document.getElementById('root'))
