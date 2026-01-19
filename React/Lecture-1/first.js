@@ -6,7 +6,7 @@
 //   createElement: function (tag, styles, children) {
 //     const element = document.createElement(tag);
 
-//     if (typeof children === "string") element.innerText = children;
+    // if (typeof children === "string") element.innerText = children;
 //     else {
 //         for (let li of children) {
 //             element.append(li)
