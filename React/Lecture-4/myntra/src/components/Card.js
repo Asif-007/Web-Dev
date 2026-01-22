@@ -10,10 +10,10 @@ function Card(props) {
         <h2>{props.cloth}</h2>
         <h1>{props.offer}</h1>
         <h2>Shop Now</h2>
+        <h3>Price : {props.price}</h3>
       </div>
     </div>
   );
 }
-
 
 export default Card;
