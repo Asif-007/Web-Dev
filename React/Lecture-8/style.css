@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+#root{
+    /* width: 500px; */
+    padding: 20px 10px;
+    background-color: rgb(218, 198, 172);
+    text-align: center;
+}
+
+
+.second{
+    padding: 20px;
+}
