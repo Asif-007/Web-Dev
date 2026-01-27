@@ -44,7 +44,8 @@ function Stopwatch() {
   function reset() {
     clearInterval(timer.current);
     timer.current = null;
-    setTime(0);
+      setTime(0);
+    setRunning(false);
   }
   return (
     <>
