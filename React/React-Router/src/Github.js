@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 
 export default function Github() {
   const { name } = useParams();
-  console.log(name)
+  console.log(name);
   const [profile, setProfile] = useState(null);
   async function fetchUser() {
     const resposne = await fetch(`https://api.github.com/users/${name}`);
@@ -13,7 +13,7 @@ export default function Github() {
 
   useEffect(() => {
     fetchUser();
-  }, []);
+  }, [name]);
   return (
     <>
       <h1> Github Profile</h1>

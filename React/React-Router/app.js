@@ -8,7 +8,7 @@ import Details from "./src/Details";
 import Zero from "./src/Zero";
 import Hi from "./src/Hi";
 import Hello from "./src/Hello";
-import  Github  from "./src/Github";
+import Github from "./src/Github";
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +17,7 @@ function App() {
         <Link to="/Contact">Contact</Link>
         <Link to="/Dashboard">Dashboard</Link>
         <Link to="/Details">Details</Link>
-        <Link to="/Github">Github</Link>
+        <Link to="/Github">Github</Link>{" "}
       </nav>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
@@ -28,7 +28,7 @@ function App() {
           <Route path="Hi" element={<Hi />}></Route>
           <Route path="Hello" element={<Hello />}></Route>
         </Route>
-        {/* <Route path="/Github" element={<Github></Github>}></Route> */}
+        <Route path="/Github" element={<Github></Github>}></Route>
         <Route path="/Github/:name" element={<Github></Github>}></Route>
       </Routes>
     </BrowserRouter>
