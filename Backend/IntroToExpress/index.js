@@ -11,7 +11,7 @@ app.use('/about/:id/:name',(req,res)=>{
 
 app.use('/contact',(req,res)=>{
     res.send('7901417998')
-})
+})  
 
 app.use('/',(req,res)=>{
     res.send("hello")
