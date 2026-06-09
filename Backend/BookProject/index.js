@@ -8,12 +8,16 @@ const BookStore = [
   { id: 3, name: "Nexus", author: "Rohit" },
   { id: 4, name: "DSA", author: "Mahara" },
   { id: 5, name: "Prem Kahani", author: "Rohan" },
+  { id: 6, name: "Lets C", author: "Vikas" },
 ];
 
 app.use(express.json());
 app.get("/books", (req, res) => {
-  res.send(BookStore);
-  console.log(BookStore);
+  // res.send(BookStore);
+  console.log(req.query);
+  const Book = BookStore.filter(ele=>ele.author===req.query.author)
+  res.send(Book);
+  console.log(Book);
 });
 
 app.get("/books/:id", (req, res) => {
