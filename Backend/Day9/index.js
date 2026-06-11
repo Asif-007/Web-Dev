@@ -66,6 +66,15 @@ app.delete("/user/:id",(req,res)=>{
     res.status(200).send("Deleted Succesfully");
 })
 
+app.get('/dummy',(req,res)=>{
+  try{
+    throw new Error('Cannot connect');
+    res.send("Request responded");
+  }catch(err){
+    res.send(err.message);
+  }
+})
+
 app.listen(4000, () => {
   console.log("Listening to port 4000");
 });
